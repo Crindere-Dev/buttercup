@@ -1,39 +1,48 @@
 
 label aqua:
     scene black
+    play music "aquarium.ogg" fadein 1.0 loop 
     "The two stepped into the aquarium,"
     "Adeline absentmindedly twirled her hair as she fixated on the tuna doing loops in front of her."
-    show m_neu at mjump(-1)
+    show till with d
+    show till_desk 
+    show m_neu behind till_desk at mjump(50) with d 
+    show cash with d
+    pause 0.5
     
     c "How many people are coming today sir."
     #bg with fish in the background and couter ladhy
     hide m_neu 
-    show m_neu_open at mjump(-1)
+    show m_neu_open behind till_desk at mjump(50)
     m "2."
     hide m_neu_open
-    show m_neu at mjump(-1)
+    show m_neu behind till_desk at mjump(50)
     c "How old."
     hide m_neu 
-    show m_neu_open at mjump(-1)
+    show m_neu_open behind till_desk at mjump(50)
     m "We are both adults."
     hide m_neu_open
-    show m_neu at mjump(-1)
+    show m_neu behind till_desk at mjump(50)
     "He lays the tickets on the table and waits patiently as they get scanned in."
     c"Would you like a map sir. "
     c"They’re £3.99 per booklet."
     hide m_neu
-    show m_neu_open at mjump(-1)
+    show m_neu_open  behind till_desk at mjump(50)
     m "No."
     hide m_neu_open
-    show m_neu at mjump(-1)
+    show m_neu  behind till_desk at mjump(50)
     c"O-Okay. Have a good time sir."
     hide m_neu 
-    show m_smile_o at mjump(-1)
+    show m_smile_o  behind till_desk at mjump(50)
     m"Hey,{w=.25} Adeline it’s time to go."
-    show a_neu_ec_mo
+    show a_neu_ec_mo  behind till_desk at ajump(400) with d
     a "Ahh—Yay :333"
+    hide a_neu_ec_mo with d 
+    hide m_smile_o with d
     "Following shortly after him, they step into the first tank."
     #basic fish halway
+    scene tank_1 with dissolve
+
     "Adeline looked upon the glass in awe, mesmerized by the natural show the fish put on for them."
     a"Woah.."
     "Malcolm looks down at her.."
@@ -67,7 +76,7 @@ label aqua:
     m "Do you want to go deeper?"
     a "Oh{w=.25} sure!…"
     "She doesn't let go."
-    #touch tank bg
+    scene turtle with d 
     "They kept walking before arriving at the touch tank."
     "Adeline bend down before starting a small conversation with the turtle."
     a "How are you today mate."
@@ -82,12 +91,17 @@ label aqua:
     "Slowly he bends down getting level with the turtle."
     m "Hello."
     "STAREEEEEEEEEEEE."
-    "The turtle takes a long hard look at Malcolm, before deciding to walk away. "
+    
+    "The turtle takes a long hard look at Malcolm," 
+    show turtlel1 with dissolve 
+    "Before deciding to walk away."
+    pause 1
+    show turtlel2 with dissolve 
     m "Oh."
     a "Hey it’s okay, maybe he was overstimulated.."
     a "You know, there actually super sensitive to environmental stimuli — like light."
     a "Maybe you unknowingly signalled for him to leave.."
-    a "That makes me feel worse."
+    m "That makes me feel worse."
     a "..."
     a "sorry…"
     "Her hand absentmindedly traced circles on to his back, creating a sort of comfort in him."
@@ -109,7 +123,6 @@ label aqua:
     a "Okay ^^"
     scene black 
     # black bg with jellyfish
-    overlay
     "The lights slowly dim the deeper as they made their way into the jelly fish room."
     "Their voices slowly soften as the room lit up with what seemed like 100 million little jellyfish..."
     a "You know what I love about Jellies.."
@@ -156,7 +169,7 @@ label aqua:
     "The silenced felt like it was panning on for eternity."
     "They both sat there, slightly awkward but relaxed.."
     "Both of them sneaked little looks at each other, maybe as a poor attempt of pushing the conversation forward."
-    Pause(2)
+    pause 2
     m"I’m transgender."
     "His voice soften," 
     "His gaze remained fixated on 2 clown circling each other slowly," 

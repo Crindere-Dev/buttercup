@@ -16,7 +16,8 @@ return
 # The game starts here.
 
 label start:
-    scene black 
+    scene black
+     
     "placeholder"
     show text "mar"
     pause 0.5

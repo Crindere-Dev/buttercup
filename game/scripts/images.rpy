@@ -6,6 +6,13 @@ image street = "street.png"
 image street_m = "images/street_morning.png"
 image overlay = "overlay.png"
 image bedroom = "images/beedroom.png"
+image till = "images/till_1.png"
+image till_desk = "images/til_2.png"
+image cash = "images/till_worker.png"
+image tank_1 = "tank_1.png"
+image turtle = "turtle.png"
+image turtlel1 = "turtle_l1.png"
+image turtlel2 = "turtle_l2.png"
 #sprites
 #Malcom Sprites
 image m_neu:

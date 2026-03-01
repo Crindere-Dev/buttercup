@@ -75,7 +75,7 @@ define config.has_voice = True
 ## the player is at the main menu. This file will continue playing into the
 ## game, until it is stopped or another file is played.
 
-# define config.main_menu_music = "main-menu-theme.ogg"
+define config.main_menu_music = "menu.ogg"
 
 
 ## Transitions #################################################################
@@ -92,8 +92,7 @@ define config.exit_transition = dissolve
 
 ## Between screens of the game menu.
 
-define config.intra_transition = sd
-
+define config.intra_transition = Dissolve(0.5)
 
 ## A transition that is used after a game has been loaded.
 
@@ -156,7 +155,7 @@ default preferences.afm_time = 15
 ## This generally should not be changed, and if it is, should always be a
 ## literal string, not an expression.
 
-define config.save_directory = "transhet-1769878302"
+define config.save_directory = "sweet_april-1769878302"
 
 
 ## Icon ########################################################################

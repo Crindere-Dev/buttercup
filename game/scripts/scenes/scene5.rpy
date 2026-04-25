@@ -1,8 +1,11 @@
 label fuck:
     scene black
-    "The apartment door shuts behind them, they stand there for a moment, gazing to each others eyes. "
-    "—breathing heavily even though nothing has happened yet."
+    stop music fadeout 1.0  
+    play music "audio/sex.ogg" fadein 1.0 loop
+    "The apartment door shut behind them, and they stood there for a moment, gazing into each others eyes. "
+    "Breathing heavily even though nothing had happened yet."
     show bedroom with d 
+    show light zorder 100 with dissolve
     pause 1.0
     show m_neu at mjump(-1) with dissolve
     m"Have a seat wherever.."
@@ -11,19 +14,19 @@ label fuck:
     show m_disappointed at mjump(-1)
     m"I’m sorry about the mess…"
     show a_flus at ajump(600) with dissolve
-    a "No — no! It’s quite alright haha we all have our days"
-    "Nervously she moves towards the bed."
-    "Malcolm followed suit, sitting beside along the edge of his mattress."
+    a "No — no! It’s quite alright haha we all have our days..."
+    "Nervously she moved towards the bed."
+    "Malcolm followed suite, sitting beside her along the edge of his mattress."
     a"..."
     m"..."
-    a "{i}Okay Addy, {w=.25}Make a Move,{w=.25} you got this don't blow it...{/i}"
-    "She takes a deep breath., then another, before turning towards the quiet man."
+    a "{i}Okay Addy, {w=.25}Make a Move,{w=.25} you got this - don't blow it...{/i}"
+    "She took a deep breath, then another, before turning towards the quiet man."
     "Then she makes her move."
     "Swiftly and albeit clumsily, she cups his face and moves in,"
     "She feels her heart trying to break out of her chest."
     "All her thoughts spiral at once..."
     "..."
-    da "{i}Is his eyes also closed?{/i}"
+    da "{i}Are his eyes also closed?{/i}"
     da "{i}Is he smiling{/i}"
     da "{i}does he want this?{/i}"
     da "{i}Am I doing it right?{/i}"
@@ -31,6 +34,11 @@ label fuck:
     da "{i}Did I blow it??{/i}"
     "..."
     "Their lips meet."
+    hide a_flus
+    hide m_disappointed
+    hide bedroom
+    show kiss with dissolve 
+    hide light with sd
     "They stay there for a moment,{w=.25} but to them it felt like eternity."
     "In that moment all the thoughts built up in Adeline's head melt away."
     da"{i}No..{/i}"
@@ -41,11 +49,15 @@ label fuck:
     "For a moment he’s in shock — still. "
     "He’s never felt such closeness before.."
     "It’s intoxicating.."
+    show makeout with dissolve 
+    hide kiss
     " Slowly, He wraps his arms around her waist and pulls her in close.."
     "Kissing her back — hesitantly at first before kissing her deeper."
     "Slowly, they melt into each others embrace, each others company."
     "The pressure in the room begins to thicken, the temperature rising as the pair begins to explore each others mouth."
     "Moans, groans and pants falling after each other in ecstasy."
+    show kiss_speak with dissolve
+    hide makeout
     "He pulls back for a second much to Adeline's dismay,"
     "His hands absentmindedly rubbing tiny circles around her back."
     m "I don't.."
@@ -58,11 +70,15 @@ label fuck:
     da"{i}he wants..{w=.25} Omg he wants to Fuck???.{/i}"
     da"..."
     da"I want.. I want you please.."
+    show kiss_happy with dissolve 
+    hide kiss_speak
     da "Please take me!.."
     m"..."
     "He nods, then scoots closer again,"
     "Leaving a quick but affectionate kiss against her lips before sliding both hands along her waist and lifting her up." 
     "— receiving a yelp from the girl as a response. "
+    show strip_clothed with dissolve
+    hide kiss_happy
     "He moves her deeper into the bed, putting her down amongst his personal collection of plushies,"
     "Along side the shark plush they bought back at the Aquarium." 
     "Adeline's looks down at the plushies drawing her gaze away from Malcolm for a sec to settle herself."
@@ -85,12 +101,24 @@ label fuck:
     m "Do you need help?."
     da"Y-Yeah. :3"
     #undress scene
+    hide bedroom
+    hide a_flus 
+    hide m_disappointed
+
     "Malcolm’s large hands returned back to the hem of her blouse, signalling her to lift her arms up before gently pulling the garment off of her." 
     "Her eyes follow his hands as her tops raises, inhaling a sharp breath when she feels the fabric parting from her body —"
+    show strip_boxbra with dissolve
+    hide strip_clothed
     "leaving her topless all for a cute lase lase bra that held her breasts in place. "
     "He then moved closer,"
-    "Gently pulling her against his chest in order to unhook her bra,"
+    "Gently, pulling her boxers down in order to unveil her throbbing cock."
+    show strip_bra with  dissolve
+    hide strip_boxbra
+    "He then pulled her against his chest in order to unhook her bra,"
     "His hands struggling with the clasp for a moment before managing to set her breasts free." 
+    show strip_naked with dissolve
+    hide strip_bra
+    pause 1
     m "..."
     da"Are you okay?.."
     m"You’re beautiful.."
@@ -104,6 +132,8 @@ label fuck:
     "Malcolm took that as his final indication that he should make his move."
     "His has began to trail along Adeline's soft, warm skin - each touch feeling like little electric shots." 
     "He grew bolder, moving his rough hand up to her small chest." 
+    show strip_grope with dissolve 
+    hide strip_naked
     "He then began to caress her small chest, cupping one of her breasts in his hand and rubbing her puffy nipples between his two fingers." 
     "His other hand trailed lower, lightly wrapping his arm around her waist to keep her in place."
     "The sensation was hypnotising," 
@@ -121,9 +151,10 @@ label fuck:
     "Adeline yelped in surprise, before letting out a loud and shameless moan, "
     "Grabbing the back of his head to push him to suck harder."
     "He pulled back a bit, worry flashing across his usually apathetic face.."
+    show strip_naked with dissolve
     m "Shit, I’m s—sorry."
     m "Was it too much.."
-    "No No, not at all!"
+    da"No No, not at all!"
 
     da "Actually it was amazing,"
     "She bucked her hips along his tummy as an invitation.."
@@ -136,9 +167,9 @@ label fuck:
 
     da"mhph!"
     m "Alright.."
+    hide strip_naked with dissolve
     "Slowly, he peppered multiple deliberate kissed down her chest down to her soft tummy." 
-    "He then moved to her jeans, frantically popping the button and unzipping the denim before yanking both jean and boxers together in one go."
-    "Her cock sprung fee, already leaking heavily from anticipation."
+    "Her cock ached, already leaking heavily from anticipation."
     "Malcolm stopped for a second, admiring the view before running a slow long line from her bush to the tip with is fore finger."
     da"nhgnn.. f—fuck mal…"
     da"s—stop teasing  me."
@@ -166,7 +197,8 @@ label fuck:
     "She really was a people’s person." 
     "She knew all the right words to push him off the edge."
 
-    #frot
+    #frot 
+    hide strip_grope
     "Her slender fingers slightly teases his entrance before slipping away."
     "Instead nudging him to lie on his back upon the mountain of stuffed animals."
     "The plushies rustled under him as Adeline spread his toned but lanky thighs to settle herself between him. "
@@ -256,6 +288,10 @@ label fuck:
     "Her thick seed sputtering into his throat, Malcolm taking all of it like the good boy he is.."
     "In a mix of ecstasy and exhaustion, they both collapse on to the bed, holding each other close as they cool down for round 2."
     hide suck_end with fade
+
+    scene black with dissolve 
+    show bedroom with dissolve
+    show dark zorder 100 with d
     a "W—Was I good ,,"
     m "You were really good, {w=.25} I’ve not felt anything like this,,"
     a "Is this your first time.."
@@ -265,7 +301,7 @@ label fuck:
     m "I'm glad.."
     "He plastered a sweet kiss on her forehead, {w=.25}absentmindedly rocking his own cock in tired lewdness."
     scene black 
-    show text "{color=#ffffff}Fast Forward...{/color}" with d 
+    show text "{color=#ffffff}Later in the Evening...{/color}" with d 
     pause 1 
     hide text with d
 
@@ -313,6 +349,8 @@ label fuck:
     "Deep gulps from Adeline resulted in Malcolm cupping her cheek and rubbing her head as if he was petting a dog,,."
     hide head_climax with d
     da"Mmmmm :3"
+    show bedroom with dissolve
+    show dark zorder 100 with d
     "Malcolm slowly got up, Pulling the girl into her lap, paying extra attention to her ass.."
     da"Slut shaming?"
     da "That’s so pervy,,"
@@ -360,7 +398,8 @@ label fuck:
     "Causing her to yelp at the temperature difference."
     m"Are you ready...?"
     da "P—Pleasee,"
-    "Malcolm's hands grip tightly on to Adeline's waist," 
+    "Malcolm's hands grip tightly on to Adeline's waist,"
+    scene fuck_start with dissolve
     "Almost using her as a handle to thrust as deep as possible,,"
     "Gently rocking his hips," 
     "Malcolm's made sure to move to a slow gentle rhythm —{w=.25} as if he was pumping his love into her bit by bit.."
@@ -377,7 +416,9 @@ label fuck:
     "He wanted everything about her to be his. "
     "He wanted her to be his."
     "He loved her."
-    "He began to tighten his grip around her wait," 
+    "He began to tighten his grip around her waist," 
+    scene fuck_during with dissolve
+    hide fuck_start
     "Ramping up his thrusts in desperation." 
     "He felt good, he felt good making her feel good." 
     "Each thrust milked a cute little thrust out of her." 
@@ -401,6 +442,7 @@ label fuck:
     dm "I want to make you mine princess."
     "Tears start to leak from both their eyes,"
     "Pure lust and a burning desire beginning to spread through ever inch of their bodies."
+
     dm "I lvoe you,"
     dm "I love you."
     dm "I love you"
@@ -416,12 +458,15 @@ label fuck:
     da "Cum inside your good girl.,,"
     da "Make me leak all over you…"
     dm "F—Fuckk,,"
+    scene fuck_climax with dissolve
+    hide fuck_during
     da "I’mm Cumming..,,,,fuckk—-ahgh,..<3"
     "With a final jolt from Malcolm, multiple ropes of white cream sputtered from Adeline's twitching shaft."
     "Her walls holding an iron grip onto Malcolm’s cock as she riles with ecstasy."
     "Malcolm collapsed on top of her, feeling exhausted and strangely complete.."
     "The world goes still, It’s just the two of them. In total harmony.."
     "With heavily lids, sleep beginning to creep over them. Being claimed by exhaustion.."
+    show black with sd
     da "Malcolm…"
     da "Did you mean it.."
     m "Hmm?"
@@ -437,17 +482,18 @@ label fuck:
     da"{cps=25}Thank you.{/cps}"
 
     da"{cps=25}For everything..{/cps}"
+    scene black 
     
-    scene black
+    play music "audio/outro.ogg" fadein 1.5 loop
     #end 
 
-    "It was any other unremarkable Tuesday," 
-    "Business{w=.25} - while not failing,{w=.25} - was as quiet and slow like any other day"
+    "It was any other unremarkable Tuesday,"
+    "Business{w=.25} - while not failing,{w=.25} - was as quiet and slow like any other day."
     " Couples,{w=.25} Normies,{w=.25} the occasional tourist or two would come,{w=.25} order,{w=.25} read and leave."
     "The quiet atmosphere was something Adeline knew too well."
+    show ending with sd
     "But all of that would lighten up when her favorite customer{w=.25} — now boyfriend —{w=.25} came to get his daily coffee."
     m"Can I have a black coffee please."
     a "..."
     a"Always... <3 "
-    scene black
-    return
+    jump credits

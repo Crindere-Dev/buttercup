@@ -50,7 +50,7 @@ And the comfort in finding someone who understands even the quietest parts of yo
 ## distribution. This must be ASCII-only, and must not contain spaces, colons,
 ## or semicolons.
 
-define build.name = "Sweet April"
+define build.name = "Sweet_April"
 
 
 ## Sounds and music ############################################################

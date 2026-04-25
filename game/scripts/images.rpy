@@ -4,7 +4,7 @@ define im_anchor = (0.5, 1.0)
 image test = "test_street.png"
 image street = "street.png"
 image street_m = "images/street_morning.png"
-image overlay = "overlay.png"
+image overlay =  "overlay.png"
 image bedroom = "images/beedroom.png"
 image till = "images/till_1.png"
 image till_desk = "images/til_2.png"
@@ -13,6 +13,14 @@ image tank_1 = "tank_1.png"
 image turtle = "turtle.png"
 image turtlel1 = "turtle_l1.png"
 image turtlel2 = "turtle_l2.png"
+image tint = "tint_blu.png"
+image dark = "dark_tint.png"
+image aquaside = "images/aquarium side walk.png"
+image jelu = "images/JEL.png"
+image sit =  "images/rest_bench.png"
+image otter = "images/ottrerererrerere.png"
+image gif = "gift_ahop.png"
+image light = "light_tinkt.png"
 #sprites
 #Malcom Sprites
 image m_neu:
@@ -33,7 +41,7 @@ image m_blushed_close:
     "m_sprite_blush_closed.png"
     zoom 1.1
 image m_blushed_open:
-    "m_sprite_blush_open.png"
+    "images/m_sprite_blush_open.png"
     zoom 1.1
 
 image m_think:
@@ -83,6 +91,8 @@ image m_shocked:
     "m_sprite_shocked.png"
     zoom 1.1
 
+
+
 #Adelines Sprites
 image a_explain:
     "a_sprite_explain.png"
@@ -120,6 +130,9 @@ image a_worry_mo:
     
 image a_shocked:
     "a_sprite_shocked.png"
+    zoom 1.1
+image a_shocked_f:
+    "a_sprite_shocked_flip.png"
     zoom 1.1
     
 image a_blush_ec_mc:
@@ -182,3 +195,27 @@ image frot_climax = "frot_climax.png"
 image head_start = "head_start.png"
 image head_during = "head_during.png"
 image head_climax = "head_climax.png"
+image a_kiss_neu = "a_kiss_1.png"
+image a_kiss_blush = "a_kiss_2.png"
+image fuck_start = "fuck_1.png"
+image fuck_during = "fuck_2.png"
+image fuck_climax = "fuck_3.png"
+image strip_clothed = "strip_1.png"
+image strip_boxbra = "strip_2.png"
+image strip_bra = "strip_3.png"
+image strip_naked = "strip_4.png"
+image strip_grope = "strip_5.png"
+image kiss = "kiss_cg_1.png"
+image makeout = "kiss_cg_2.png"
+image kiss_speak = "kiss_cg_4.png"
+image kiss_happy = "kiss_cg_5.png"
+image ending = "ending.png"
+
+
+
+#ctc 
+image ctc_blink:
+    "gui/arrow.png"
+    linear 0.75 alpha 1.0
+    linear 0.75 alpha 0.0
+    repeat 

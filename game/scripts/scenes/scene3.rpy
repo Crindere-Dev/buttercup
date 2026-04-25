@@ -1,17 +1,19 @@
 
 define config.layers = [ 'master', 'transient', 'screens', 'overlay']
 label date:
+    stop music
     camera at cam_reset
     scene black
-    "On a cold but refreshing winter day,"
-    "Malcolm stood there {w=0.25}slightly bored but content."
+    play music "audio/walk.ogg" fadein 1.0 loop volume 0.5
+    "On a cold but refreshing winter day..."
+    "Malcolm stood there, {w=0.25}slightly bored but... content."
     show test with dissolve 
     pause(1)
     show m_neu with dissolve
-    "It seemed liked he’d been stood there the whole time.."
+    "It seemed liked he’d been stood there the whole morning..."
     show test with hpunch
-    a"huff  huff huff"
-    "The sound of rapid footsteps slowly ramped up as a certain barista approached.."
+    a"huff.. huff.. huff..."
+    "The sound of rapid footsteps slowly drew closer as a certain barista approached..."
     
     a"ohh—{w=0.25} huff— {w=0.25}you’re{w=0.25}—huff—{w=0.25}already here"
     hide m_neu
@@ -22,10 +24,10 @@ label date:
     a "Hey!— oh wow"#
     hide a_neu_ec_mo
     show a_neu_eo_mo at ajump(600)
-    a "How—How are you,{w=0.25} waoww I love your coat!"
+    a "How—How are you,{w=0.25} waoww I.... love your coat!"
     hide a_neu_eo_mo
     show a_blush_ec_mo at ajump(600)
-    a "You look great :3"
+    a "You look great! :3"
     hide m_neu
     show m_neu_open at mjump(-1)
     m "Thank you."
@@ -44,7 +46,7 @@ label date:
     a "“Ah this?"
     hide a_blush_flap
     show a_blush_flap at ts_acShake(600,5,0.1)
-    a "Noo it's just something I threw together hehehe"
+    a "Noo it's just something I threw together! hehehe..."
     hide m_neu
     show m_neu_open at mjump(-1)
     m "Are you not cold?"
@@ -63,7 +65,7 @@ label date:
 
     show m_think at mjump(-1)
     hide m_neu
-    m "Our tickets is for 12:30…"   
+    m "Our tickets are for 12:30…"   
     hide m_think
 
     show m_neu at mjump(-1)
@@ -75,7 +77,7 @@ label date:
     a "Ahh, Yes!"
     hide a_neu_eo_mo
     show a_neu_ec_mo at ajump(600)
-    a "Took the words right out of my mouth, haha"
+    a "Took the words right out of my mouth, haha!"
     show m_neu at ts_moveX(1025, 2)
     hide a_neu_ec_mo
     show a_neu_ec_mc at rightish
@@ -91,6 +93,7 @@ label date:
     scene black
     show street:
         linear 60 zoom 0.9
+    show overlay zorder 100 with dissolve
         
         
     # walk scene
@@ -99,11 +102,11 @@ label date:
         zoom 1.2
     show a_neu_ec_mo at ts_acFloat(150,10) with dissolve:
         zoom 1.2
-    a "I wanted to ask, how long have you been standing there for {w=0.25}"
+    a "I wanted to ask, how long have you been standing there for? {w=0.25}"
     hide a_neu_ec_mo
     show a_neu_eo_mo at ts_acFloat(150,10):
         zoom 1.2
-    a "— like I thought I was early,,"
+    a " like, I thought I was early..."
     hide a_neu_eo_mo
     show a_neu at ts_acFloat(150,10):
         zoom 1.2
@@ -117,7 +120,7 @@ label date:
         zoom 1.2
     show m_neu at ts_acFloat(-200,10):
         zoom 1.2
-    a "10??{w=.25} Wow you're really on point aren't you."
+    a "10??{w=.25} Wow, you're really on point aren't you..."
     hide m_neu
     show m_neu_open at ts_acFloat(-200,10):
         zoom 1.2
@@ -197,7 +200,7 @@ label date:
     hide a_explain
     show a_blush_flap at ts_acFloat(150,10):
         zoom 1.2
-    a "or maybe..{w=.25} you're a spy oooh >:3 "
+    a "or maybe..{w=.25} you're a spy! oooh... >:3 "
     hide m_neu
     show m_smile_o at ts_acFloat(-200,10):
         zoom 1.2
@@ -240,7 +243,7 @@ label date:
         zoom 1.2
     show m_neu at ts_acFloat(-200,10):
         zoom 1.2
-    a"Wow you're degree fits you perfectly.."
+    a"Wow - your degree fits you perfectly.."
     hide m_neu
     show m_neu_open at ts_acFloat(-200,10):
         zoom 1.2
@@ -278,7 +281,7 @@ label date:
         zoom 1.2
     show a_shame_c at ts_acFloat(150,10):
         zoom 1.2
-    a "{i}He's so Colddd, {w=.25} I couldn't even tell sobbb{/i}"
+    a "{i}He's so cold, {w=.25} I couldn't even tellll...{/i}"
     hide a_shame_c
     show a_shame_o at ts_acFloat(150,10):
         zoom 1.2
@@ -290,7 +293,7 @@ label date:
         zoom 1.2
     show m_neu_open at ts_acFloat(-200,10):
         zoom 1.2
-    m"What university do you go too..?"
+    m"What university do you go to..?"
     hide a_shame_c
     hide m_neu_open
     show a_shame_o at ts_acFloat(150,10):
@@ -352,7 +355,7 @@ label date:
     hide m_smile_o
     show m_smile_ec_mo at ts_acFloat(-200,10):
         zoom 1.2
-    m "You did pour...{w=.25} boiling hot coffee on me."
+    m "You did spill...{w=.25} boiling hot coffee on me."
     hide m_smile_ec_mo
     hide a_tsun
     show m_smile_ec_mc at ts_acFloat(-200,10):
@@ -373,9 +376,9 @@ label date:
         zoom 1.2
     show a_shame_c at ts_acFloat(150,10):
         zoom 1.2
-    a"{i}Anddd back to the one worded answers...{w=.25} when will it end.{/i}"
-    a"{i}He has a certain type of humor doesn't he..{/i}"
-    a"{i}Bit of a deadpanner..{/i}"
+    a"{i}Anddd back to the one worded answers...{w=.25} when will it end..{/i}"
+    a"{i}He has a certain type of humour, doesn't he-{/i}"
+    a"{i}bit of a deadpanner..{/i}"
     hide a_shame_c
     show a_blush_ec_mc at ts_acFloat(150,10):
         zoom 1.2
@@ -396,14 +399,14 @@ label date:
     hide a_neu_eo_mo
     show a_neu_ec_mo at ts_acFloat(150,10):
         zoom 1.2
-    a "Oh Cute!"
+    a "Oh, Cute!"
     hide m_neu
     hide a_neu_ec_mo
     show m_blushed_close at ts_acFloat(-200,10):
         zoom 1.2
     show a_blush_ec_mo at ts_acFloat(150,10):
         zoom 1.2
-    a "{i}{cps=30}oh did I really just call him cute oh my goddfsk{/cps}{/i}"
+    a "{i}{cps=30}oh did I really just call him cute? oh my godfds{/cps}{/i}"
     hide a_blush_ec_mo
     hide m_blushed_close 
     show a_blush_eo_mc at ts_acFloat(150,10):
@@ -411,7 +414,7 @@ label date:
     show m_blushed_open at ts_acFloat(-200,10):
         zoom 1.2
     m "Thank you..."
-    m "What do you like.."
+    m "What do you like..?"
     hide a_blush_eo_mc
     hide m_blushed_open
     show a_blush_ec_mo at ts_acFloat(150,10):
@@ -446,11 +449,11 @@ label date:
         zoom 1.2
     show a_blush_ec_mc at ts_acFloat(150,10):
         zoom 1.2
-    a"{i}Godd that's adorable he's like a little nerdd inside.{/i}"
+    a"{i}Godd, that's adorable - he's like a little nerdd inside!{/i}"
     hide a_blush_ec_mc
     show a_explain at ts_acFloat(150,10):
         zoom 1.2
-    a"Woah that sounds hard.."
+    a"Woah, that sounds hard.."
     hide m_neu
     show m_explain at ts_acFloat(-200,10):
         zoom 1.2
@@ -526,7 +529,7 @@ label date:
     
     show a_speak_explain at ts_acFloat(150,10):
         zoom 1.2
-    a "That’s from Pretty Princess Nanako,{w=.25} no?"
+    a "That’s from Pretty Princess Nanako,{w=.25} right?!"
     hide m_smile_c
     show m_neu_open at ts_acFloat(-200,10):
         zoom 1.2
@@ -534,16 +537,16 @@ label date:
     hide m_neu_open
     show m_neu at ts_acFloat(-200,10):
         zoom 1.2
-    a"Yeah! I knew I recognised it."
+    a"Yeah! I knew I recognised it..."
     hide a_ec_explain
     hide a_speak_explain
     show a_explain at ts_acFloat(150,10):
         zoom 1.2
-    a "Basically episode 8, {w=.25} she was trying to break into the observatory to save her familiar right.."
+    a "Basically episode 8, {w=.25} when she was trying to break into the observatory to save her familiar, right.."
     hide a_explain
     show a_ec_explain at ts_acFloat(150,10):
         zoom 1.2
-    a "But then she was like the locks were impossible!"
+    a "But then she was like - the locks were impossible!"
     hide a_ec_explain
     show a_explain at ts_acFloat(150,10):
         zoom 1.2
@@ -552,7 +555,7 @@ label date:
     hide a_explain
     show a_ec_explain at ts_acFloat(150,10):
         zoom 1.2
-    a "And they literally did the same thingy you were talking about, omg!"
+    a "And they literally did the same... thingy you were talking about, omg!"
     a "And I remember it because basically someone replied calling him a virgin."
     a "Something like: Nanako isn't gonna fuck you anon."
     hide a_ec_explain
@@ -598,13 +601,13 @@ label date:
     hide a_blush_ec_mo
     show a_blush_eo_mc at ts_acFloat(150,10, rot=3):
         zoom 1.2
-    "Third times the charm she thought as her eyes quickly darted to the floor again before slowly beginning to fixate on his hands again."
+    "{i}Third times' the charm... {/i}she thought as her eyes quickly darted to the floor again, before slowly beginning to fixate on his hands."
     hide a_blush_eo_mc
     show a_blush_ec_mc at ts_acFloat(150,10, rot=3):
         zoom 1.2
-    a"{i}Wow, I really think were going somewhere.{/i}"
+    a"{i}Wow, I really think we're going somewhere.{/i}"
     a"{i}He’s so charming in his own weird apathetic way..{/i}"
-    a "{i}Ok I’m gonna go for it,{w=.5} im going,{w=.25} im going im—{/i}"
+    a "{i}Ok, I’m gonna go for it,{w=.5} im going,{w=.25} im going im—{/i}"
     a"Can I hold your h—"
     hide m_blushed_close
     hide a_blush_ec_mc
@@ -612,7 +615,7 @@ label date:
         zoom 1.2
     show m_neu_open at mjump(110):
         zoom 1.2
-    m"We are here."
+    m"We're here."
     hide a_shocked
     hide m_neu_open
     show a_shame_o at ajump(500):
@@ -623,10 +626,11 @@ label date:
     hide a_shame_o
     show a_shame_c at ajump(500):
         zoom 1.2
-    "Malcolm digs into his pocket,{w=.25} pulling out his sleek wallet before taking 2 unwrinkled tickets out of the cash slot."
-    "Adeline takes a deep breath to reset herself.."
+    "Malcolm dug into his pocket,{w=.25} pulling out his sleek wallet and taking two neatly folded tickets out of the cash slot."
+    "Adeline took a deep breath..."
     hide m_neu with dissolve
     hide a_shame_c with dissolve
+    pause 1.0
     jump aqua
 
     
